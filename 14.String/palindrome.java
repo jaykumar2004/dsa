@@ -16,4 +16,4 @@ public class palindrome {
     }
 }
 
-//TC=O(n)
+//TimeComplexity=O(n)
