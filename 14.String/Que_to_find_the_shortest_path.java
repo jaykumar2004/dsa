@@ -31,4 +31,4 @@ public class Que_to_find_the_shortest_path {
         System.out.println(getShortestPath(path));
     }
 }
-//TC=O(n)
+//TimeComplexity=O(n)
