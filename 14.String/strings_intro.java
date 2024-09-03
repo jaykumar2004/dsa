@@ -21,7 +21,7 @@ public class strings_intro {
         // name = sc.nextLine(); //in next function it takes only single words, so we use nextLine function
         // System.out.println(name);
 
-        //length of the string
+        //length of the strings
         // String fullName = "Tony Stark";
         // System.out.println(fullName.length());
 
