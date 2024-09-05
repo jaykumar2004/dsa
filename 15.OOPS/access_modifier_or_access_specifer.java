@@ -15,3 +15,11 @@ class BankAccount {
         password = pwd;
     }
 }
+
+// Access   |   within  |   within   |   outside           |    outside
+// Modifer  |  class    |  package   |  bysubclass only    |   package
+
+// Private  |    Y      |     N      |        N            |       N
+// Default  |    Y      |     Y      |        N            |       N
+// Protected|    Y      |     Y      |        Y            |       N
+// Public   |    Y      |     Y      |        Y            |       Y
