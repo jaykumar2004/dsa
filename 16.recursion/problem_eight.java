@@ -1,4 +1,5 @@
 public class problem_eight {
+    //last occurence in array
     public static int lastOccurence(int arr[], int key, int i){
         if(i == arr.length){
             return -1;
