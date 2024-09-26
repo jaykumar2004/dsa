@@ -1,16 +1,16 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "String",
         "Basics/Basic",
         "7.conditional statement",
         "7-8.conditional statement",
+        "16.recursion",
         "15.OOPS",
         "14.String",
         "13.2d arrays",
         "12.sorting",
         "11.arrays",
         "10.functions",
-        "16.recursion"
+        "17.Divide&Conquer"
     ]
 }
