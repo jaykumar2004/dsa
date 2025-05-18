@@ -96,7 +96,13 @@ public class advance_patterns {
             }
             System.out.println();
         }
+    }
 
+
+    //solid rhombus
+    public static void rhombusStar(int n){
+        for(int i=1;i<=n;i++){
+        }
     }
 
 
