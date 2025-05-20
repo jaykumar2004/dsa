@@ -54,13 +54,12 @@ public class advance_patterns {
     }
 
     //01 triangle
-    public static void printZeroOne(int n){
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-                if((i+j)%2==0){
+    public static void printZeroOne(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
                     System.out.print("1");
-                }
-                else{
+                } else {
                     System.out.print("0");
                 }
             }
@@ -70,28 +69,28 @@ public class advance_patterns {
 
 
     //butterfly pattern
-    public static void butterflyPattern(int n){
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
+    public static void butterflyPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
-            for(int j=1;j<=2*(n-i);j++){
+            for (int j = 1; j <= 2 * (n - i); j++) {
                 System.out.print(" ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
 
-        for(int i=n;i>=1;i--){
-            for(int j=1;j<=i;j++){
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
-            for(int j=1;j<=2*(n-i);j++){
+            for (int j = 1; j <= 2 * (n - i); j++) {
                 System.out.print(" ");
             }
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -100,9 +99,62 @@ public class advance_patterns {
 
 
     //solid rhombus
-    public static void rhombusStar(int n){
-        for(int i=1;i<=n;i++){
+    public static void solidRhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
+    }
+
+    //hollow rhombus
+    public static void hollowRhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= (n - i); j++) {
+                System.out.print(" ");
+            }
+            //hollow rectangle - stars
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+    }
+
+
+    //diamond
+    public static void diamondPatter(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=(2*i-1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //2 half
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=(2*i-1);j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
 
 
@@ -112,6 +164,9 @@ public class advance_patterns {
         // invHalfPyrNo(5);
         // floydsTri(5);
         // printZeroOne(5);
-        butterflyPattern(5);
+        // butterflyPattern(5);
+        //solidRhombus(5);
+        //hollowRhombus(5);
+        diamondPatter(4);
     }
 }
